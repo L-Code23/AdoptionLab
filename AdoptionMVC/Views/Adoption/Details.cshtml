@@ -1,0 +1,12 @@
+﻿ @model List<Animal>
+@{
+    List<string> breed = Model.Select(p => p.Breed).Distinct().ToList();
+    foreach (Animal p in Model)
+    {
+        <a asp-controller="Adoption" asp-action="Details">@p.Image,@p.Name,@p.Description,@p.Age,@p.Breed</a>
+    }
+}
+
+
+<a asp-controller="Adoption" asp-route="AddDog">Dog Registry</a>
+

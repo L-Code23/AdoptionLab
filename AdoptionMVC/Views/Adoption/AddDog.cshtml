@@ -1,0 +1,30 @@
+﻿@model Animal
+
+<form><a asp-controller ="Adoption" asp-action="AddDog" method="post" >@Model.Image,@Model.Name,@Model.Description,@Model.Breed,@Model.Age</a>
+    <h1 class=" text-center" class="" id="Add A Dog To The Registry" >Registration</h1>
+    <div class="align-content-around"; class="">
+           <label for="image">Image:</label>
+       <p> 
+            <input type="text" image="image" id="image"required />
+        </p>
+       <label for="name "> Name:</label>
+       <p>
+        <input type="text" name="name" id="name" required/>
+       </p>
+        <label for="description "> Description:</label>
+        <p>
+            <input type="text" description="description" id="description" required/>
+        </p>
+        <label for="breed "> Breed:</label>
+        <p>
+            <input type="text" breed="breed" id="breed" required/>
+        </p>
+        <label for="age"> Age:</label>
+        <p>
+            <input type="age" name="age" id="age" required/>
+        </p>
+
+        <p>
+            <input type="submit" />
+        </p>
+        </form>

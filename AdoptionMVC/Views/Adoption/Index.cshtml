@@ -1,0 +1,26 @@
+﻿ @model List<Animal>
+
+   
+@{
+    List<string> breed = Model.Select(p => p.Breed).Distinct().ToList();
+    foreach (string c in breed)
+    {
+        <h1><a asp-asp-controller="Adoption" asp-action="Details" asp-route-breed="@c">@c</a></h1>
+    }
+}
+
+
+       
+
+  
+            
+        
+
+    
+    <!-- else
+    // {
+    //         <p>The record does not exist</p>
+     }     
+ }-->
+        <!--<a asp-controller="Adoption" asp-action="AddDog" method="post">Dog Registry</a>-->
+        
